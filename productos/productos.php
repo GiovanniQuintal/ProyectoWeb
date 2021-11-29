@@ -1,9 +1,11 @@
 
-<?php include_once "header.php" ?>
-<?php
+<?php include_once "header.php" ;
+
 include_once "funciones.php";
+
 $productos = obtenerProductos();
 ?>
+
 <div class="columns">
     <div class="column">
         <h2 class="is-size-2">Productos existentes</h2>

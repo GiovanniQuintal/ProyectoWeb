@@ -25,6 +25,13 @@ h1{
     font-size: 40px;
 }
 
+h2{
+  background: #fff;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
 input[type="text"], 
 input[type="password"]{
     outline: none;
@@ -73,7 +80,7 @@ p{
 
 .link{
     text-decoration: none;
-    color: #1a2537;
+    color:#1a2537;
     font-weight: 600;
 }
 

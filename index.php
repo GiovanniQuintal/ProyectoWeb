@@ -1,24 +1,4 @@
-<?php
 
-//
-  session_start();
-//
-
-  require 'database.php';
-
-  if (isset($_SESSION['user_id'])) {
-    $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
-    $records->bindParam(':id', $_SESSION['user_id']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
-
-    $user = null;
-
-    if (count($results) > 0) {
-      $user = $results;
-    }
-  }
-?>
 
 <!DOCTYPE html>
 
@@ -33,18 +13,6 @@
     <body>
         <!-- Header nav -->
         <?php require "partials/header.php" ?>
-
-
-      <?php if(!empty($user)): ?>
-      <b> Hola <?= $user['email']; ?>
-      
-      <a href="logout.php">
-        (Log out)
-      </a>
-    <?php else: ?>
-      <b> Registrate para comprar</b>
-
-    <?php endif; ?>
        
      
         <!-- Carrousel -->
