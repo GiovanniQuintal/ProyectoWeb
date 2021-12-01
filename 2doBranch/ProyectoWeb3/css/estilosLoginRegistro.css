@@ -1,4 +1,6 @@
-
+body{
+  background-image: url(imgs/prism.png);
+}
 
 * {
     box-sizing: border-box;

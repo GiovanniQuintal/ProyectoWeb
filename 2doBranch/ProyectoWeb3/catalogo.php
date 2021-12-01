@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tienda</title>
+    <title>Llavero</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link href="css/estilosMain.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
     <link rel="stylesheet" href="../libs/fonts/icomoon/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,20 +16,23 @@
     <link rel="stylesheet" href="../libs/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../libs/css/aos.css">
     <link rel="stylesheet" href="../libs/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   </head>
   <body>
   
   <div class="site-wrap">
-  <?php require "partials/header.php" ?> 
+  <?php include("partials/header.php"); ?>  
 
     <div class="site-section">
       <div class="container">
 
-        <div class="row mb-5">
+        <div class="row mb-4">
           <div class="col-md-15">
 
+            <br>
+            <br>
             
-            <div class="row mb-5">
+            <div class="row mb-4">
             <?php
               
               include('mysql/conexion.php');

@@ -1021,6 +1021,8 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 	options: {
 		animate: false,
 
+
+		
 		distance: 0,
 		max: 100,
 		min: 0,

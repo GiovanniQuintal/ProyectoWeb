@@ -1,4 +1,6 @@
 <?php
+
+
   session_start();
   include("mysql/conexion.php");
   
@@ -83,7 +85,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tienda </title>
+    <title>Llavero </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -95,6 +97,7 @@
     <link rel="stylesheet" href="../libs/css/jquery-ui.css">
     <link rel="stylesheet" href="../libs/css/owl.carousel.min.css">
     <link rel="stylesheet" href="../libs/css/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 
     <link rel="stylesheet" href="../libs/css/aos.css">
@@ -177,7 +180,7 @@
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
-                    <span class="text-black">Subtotal</span>
+                    <span class="text-black">Total</span>
                   </div>
                   <div class="col-md-6 text-right">
                   
@@ -185,13 +188,10 @@
                   </div>
                 </div>
                 <div class="row mb-5">
-                  <div class="col-md-6">
-                    <span class="text-black">Total</span>
-                  </div>
+
                   <div class="col-md-6 text-right">
                   <?php if (isset($_SESSION['usuario'])) {?>
-                    <strong class="text-black">$<?php echo number_format($totalDesc,2);?></strong>
-                  <?php }else{?>
+                    
                     <strong class="text-black">$<?php echo number_format($total,2);?></strong>
                   <?php }?>
                   </div>

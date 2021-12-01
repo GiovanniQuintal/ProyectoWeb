@@ -18,7 +18,8 @@
     $total = $total+($producto['PRECIO']*$producto['CANTIDAD']);
   }
   $fecha = date('Y-m-d h:m:s');
-  $conexion ->query("INSERT INTO usuario(nombre,email,passworda,nivel ) values ('$nombre','$email','$pass','$nivel')") or die($conexion->error);
+  
+ $conexion ->query("INSERT INTO usuario(nombre,email,passworda,nivel ) values ('$nombre','$email','$pass','$nivel')") or die($conexion->error);
   $conexion ->query("INSERT INTO ventas(id_usuario,total,fecha) values (1,'$total','$fecha')") or die($conexion->error);
   $id_venta = $conexion->insert_id;
   foreach ($_SESSION['carrito'] as $key => $producto) {
@@ -70,7 +71,7 @@
     <link rel="stylesheet" href="../libs/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../libs/css/aos.css">
     <link rel="stylesheet" href="../libs/css/style.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
   </head>
   <body>
   
@@ -81,10 +82,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <span class="icon-check_circle display-3 text-success"></span>
-            <h2 class="display-3 text-black">Relizado con exito!</h2>
+            
+            <h2 class="display-3 text-black">Disfrutalo!</h2>
             <p class="lead mb-5">Orden Completada.</p>
-            <p><a href="catalogo.php" class="btn btn-sm btn-primary btn-outline-warning">Regresar a la tienda</a></p>
+            <p><a href="catalogo.php" class="btn-dark btn-sm btn-primary btn-outline-warning">Regresar a la tienda</a></p>
           </div>
         </div>
       </div>
