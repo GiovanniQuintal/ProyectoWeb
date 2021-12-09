@@ -24,8 +24,10 @@
       <b> Registrate para comprar</b>
 
     <?php endif; ?>
+
+    Cambio Game to practice
     
-    
+
     
         
     <!-- JS de bootstrap para animaciones -->
