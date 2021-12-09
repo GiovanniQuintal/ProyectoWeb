@@ -24,8 +24,6 @@
       <b> Registrate para comprar</b>
 
     <?php endif; ?>
-
-    mostrar aqui
     
     
     
