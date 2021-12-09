@@ -25,8 +25,10 @@
 
     <?php endif; ?>
 
-    Cambio 2
+
+      Cambio 2
     
+
     
         
     <!-- JS de bootstrap para animaciones -->
